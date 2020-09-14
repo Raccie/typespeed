@@ -1,0 +1,27 @@
+.Keyboard {}
+
+.key {
+    width: 100px;
+    height: 100px;
+    /*background-color: grey;*/
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+.key > span {
+    margin: 0 auto;
+    font-size: 70px;
+}
+
+.topRow,
+.homeRow,
+.bottomRow{
+    display: flex;
+}
+.homeRow {
+    margin-left: 30px;
+}
+.bottomRow {
+    margin-left: 80px;
+}

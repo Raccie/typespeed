@@ -1,0 +1,10 @@
+.TextField {}
+
+.TextArea{
+    width: 80%;
+    height: 100px;
+}
+
+.TextInput{
+    font-size: 30px;
+}
