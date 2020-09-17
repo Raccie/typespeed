@@ -40,7 +40,7 @@ onkeydown = ev => {
       nextWord();
       if (isLastWord){
         localStorage.setItem('keyMap', JSON.stringify(Array.from(keyMap)))
-        window.location.href = '/results';
+        window.location.href += 'results';
       }
     }
 
