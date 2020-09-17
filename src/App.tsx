@@ -40,7 +40,7 @@ onkeydown = ev => {
       nextWord();
       if (isLastWord){
         localStorage.setItem('keyMap', JSON.stringify(Array.from(keyMap)))
-        window.location.href += 'results';
+        window.location.href += window.location.href.endsWith('/') ? 'results' : '/results';
       }
     }
 
@@ -122,7 +122,7 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/results">
+          <Route path="/typespeed/results">
             <Keyboard isResult={true} map={defMap} />
             <div className="result-container">
               {results}
